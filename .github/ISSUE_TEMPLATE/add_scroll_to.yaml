@@ -7,14 +7,14 @@ body:
     id: integration_name
     attributes:
       label: "Name of the project"
-      placeholder: "Example: wagmi"
+      placeholder: "Zerolend"
     validations:
       required: true
   - type: dropdown
     id: integration_type
     attributes:
-      label: "Project type"
-      options:
+      label: "Tool"
+      options: 
         - Library
         - Tool
     validations:
@@ -23,21 +23,21 @@ body:
     id: integration_site_link
     attributes:
       label: "Site of the project"
-      placeholder: "https://wagmi.sh/"
+      placeholder: "https://zerolend.xyz/"
     validations:
       required: false
   - type: input
     id: integration_github_link
     attributes:
       label: "Github repository of the project"
-      placeholder: "https://github.com/wagmi-dev/wagmi"
+      placeholder: "https://github.com/zerolend"
     validations:
       required: true
   - type: dropdown
     id: integration_network
     attributes:
       label: "Networks"
-      description: "On which networks should this be supported? (You can pick multiple options)"
+      description: "Scroll Mainnet"
       multiple: true
       options:
         - Scroll Testnet - Sepolia
@@ -48,6 +48,6 @@ body:
     id: integration_description
     attributes:
       label: "Additional context"
-      description: "Describe any context, screenshot or specification of changes here"
+      description: "Zerolend is Dapp to provide Borrowing and lending on Metis and ZKsyinc network, i think its important to implement Zerolend to Scroll "
     validations:
       required: false
